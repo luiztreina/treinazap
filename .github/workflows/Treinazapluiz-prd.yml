@@ -1,8 +1,9 @@
 name: TreinaZap PRD para S3
 
 on:
-  release:
-    types: [Commit]
+  push:
+    branches:
+      - master
 
 jobs:
   build:
