@@ -11,8 +11,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
         node-version: 12.21.0
-           name: INSTALL E BUILD 
-           run: npm install && npm run build
-          - name: LISTAR ARQUIVOS
-           run: ls -la build/*
+      - name: INSTALL E BUILD 
+        run: npm install && npm run build
+      - name: LISTAR ARQUIVOS
+        run: ls -la build/*
         
