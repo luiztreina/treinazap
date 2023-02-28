@@ -12,10 +12,6 @@ jobs:
         with:
          node-version: 12.21.0
       - name: INSTALL E BUILD 
-        run: npm install && npm run build
-        env:
-           CI: "false"
-      - name: LISTAR ARQUIVOS
-        run: ls -la build/*
+        run: node --version
         
         
