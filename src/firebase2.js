@@ -1,14 +1,12 @@
 import firebase from 'firebase';	
 
 const firebaseConfig = {	
-    apiKey: "API_KEY",
-    authDomain: "PROJECT_ID.firebaseapp.com",
-    databaseURL: "https://PROJECT_ID.firebaseio.com",
-    projectId: "PROJECT_ID",
-    storageBucket: "PROJECT_ID.appspot.com",
-    messagingSenderId: "SENDER_ID",
-    appId: "APP_ID",
-    measurementId: "G-MEASUREMENT_ID",
+    apiKey: "AIzaSyAZESJmHEmXiZXbbJUzPDgwrvWhsxoQohI",
+  authDomain: "treinazap2023.firebaseapp.com",
+  projectId: "treinazap2023",
+  storageBucket: "treinazap2023.appspot.com",
+  messagingSenderId: "725874243810",
+  appId: "1:725874243810:web:ec7fbf6413e5f3b51406bb"
 };	
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);	
