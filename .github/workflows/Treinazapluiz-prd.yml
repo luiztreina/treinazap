@@ -1,9 +1,7 @@
 name:  Deploy TreinaZap to S3
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
 
 jobs:
   build:
