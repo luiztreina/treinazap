@@ -15,7 +15,10 @@ jobs:
         run: npm install && npm run build
         env:
            CI: "false"
-      - name: LISTAR ARQUIVOS
-        run: ls -la build/*
-        
+      - name: DEPLOY S3
+        run: cd build && AWS_ACCESS_KEY_ID=${CHAVE} AWS_SECRET_ACCESS_KEY=${SENHA} aws s3 sync - s3://treinazapluiz --acl public-read --delete
+        env: 
+           CHAVE: ${{ secret.ACCESS_KEY }}
+           SENHA: ${{ secrets.SECRET_KEY }}
+         
         
