@@ -11,8 +11,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
          node-version: 12.21.0
-         name: INSTAL AWS CLIENTE
-         run: pip install awscli
+      - name: INSTALL AWS CLIENTE
+        run: pip install awscli
       - name: INSTALL E BUILD 
         run: npm install && npm run build
         env:
