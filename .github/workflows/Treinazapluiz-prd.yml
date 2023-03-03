@@ -18,6 +18,6 @@ jobs:
         env:
            CI: "false"
       - name: DEPLOY S3
-        run: cd build && AWS_ACCESS_KEY_ID=AKIAYR4V437NN26JXL23 AWS_SECRET_ACCESS_KEY=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 aws s3 sync . s3://treinazapluiz --acl public-read --delete     
+        run: cd build && AWS_ACCESS_KEY_ID=AKIAYR4V437NN26JXL23 AWS_SECRET_ACCESS_KEY=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 aws s3 sync . s3://luizproject --acl public-read --delete     
          
         
